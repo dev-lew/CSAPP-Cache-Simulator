@@ -8,7 +8,7 @@ and storing it in a struct, where one struct holds the info
 from one line of the trace file. The cache simulator works
 by reading this struct.
 
-Requires x86-64 system
+Makefile requires x86-64 system and the other CS:APP files 
 
 ## Usage
 linux> ./csim [-hv] -s <num> -E <num> -b <num> -t <tracefile>\n
