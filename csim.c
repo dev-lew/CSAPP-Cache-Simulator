@@ -278,11 +278,7 @@ static void parse_trace(trace_line *trace, int s, int b, bool is_verbose) {
         current_set = cache;
 
         // Locate desired set, assumes the set index is valid
-        while (current_set->index != tag_index[1]) {
-            current_set++;
-        }
-
-        first_line = current_line = current_set->arr_blocks;
+        first_line = current_line = current_set[tag_index[1]].arr_blocks;
 
         // Find the matching tag by iterating through lines
         for (int i = 0; i < lines; i++) {
